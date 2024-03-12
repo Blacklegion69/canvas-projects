@@ -47,4 +47,13 @@ class Utils {
     }
     return Math.random() * (max - min + 1) + min;
   }
+  distance(x1: number, y1: number, x2: number, y2: number): number {
+    const sum1 = x1 + y1;
+    const sum2 = x2 + y2;
+    const sum = Math.pow(sum1, 2) + Math.pow(sum2, 2);
+    return Math.sqrt(sum);
+  }
 }
+
+
+export default Utils;
