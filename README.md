@@ -1,5 +1,3 @@
-# All my canvas practise
-
 ## Get started
 
 #### Clone the repository
