@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Utils {
   constructor() {
-    colors: [
+    this.colors = [
       "#42a5f5",
       "#ab47bc",
       "#d32f2f",
