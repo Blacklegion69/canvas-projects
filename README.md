@@ -14,6 +14,8 @@
 - [gravity-2.0](https://github.com/JaberChowdhury/canvas-projects/tree/gravity-2.0)
 - [touchmove-1st](https://github.com/JaberChowdhury/canvas-projects/tree/touchmove-1st)
 - [touchmove-1st-auto](https://github.com/JaberChowdhury/canvas-projects/tree/touchmove-1st-auto)
+- [starter-code](https://github.com/JaberChowdhury/canvas-projects/tree/starter-code)
+- [lib](https://github.com/JaberChowdhury/canvas-projects/tree/lib)
 
 ## Get started
 
