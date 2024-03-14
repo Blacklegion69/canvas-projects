@@ -32,12 +32,7 @@ window.onload = () => {
     }
   }
 
-  const circle = new Circle(
-    screen.w / 2,
-    screen.h / 2,
-    20,
-    u.colors[u.random(0, 15, true)],
-  );
+  const circle = new Circle(screen.w / 2, screen.h / 2, 20, u.getColor());
 
   const animate = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);

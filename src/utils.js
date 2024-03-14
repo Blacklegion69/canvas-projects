@@ -53,6 +53,10 @@ class Utils {
     const sum = Math.pow(sum1, 2) + Math.pow(sum2, 2);
     return Math.sqrt(sum);
   }
+  getColor() {
+    const length = this.colors.length;
+    return this.colors[this.random(0, length, true)];
+  }
 }
 
 export default Utils;
