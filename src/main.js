@@ -6,6 +6,10 @@ window.onload = () => {
   const context = canvas.getContext("2d");
   const u = new Utils();
 
+  // states
+  const circles_limit = 100;
+  const circles = [];
+
   const screen = {
     w: window.innerWidth,
     h: window.innerHeight,
@@ -31,6 +35,14 @@ window.onload = () => {
       context.fill();
     }
   }
+
+  // make circles
+  const make_circles = () => {
+    for (let i = 0; i < circles_limit; i++) {
+      const a_good_circle = new Circle();
+      circles.push();
+    }
+  };
 
   const circle = new Circle(screen.w / 2, screen.h / 2, 20, u.getColor());
 
