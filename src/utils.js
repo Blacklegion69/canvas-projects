@@ -55,7 +55,12 @@ class Utils {
   }
   getColor() {
     const length = this.colors.length;
-    return this.colors[this.random(0, length, true)];
+    return this.colors[this.random(0, length - 1, true)];
+  }
+  chose(data) {
+    const data_length = data.length;
+    const random_number = this.random(0, data_length - 1, true);
+    return data[random_number];
   }
 }
 
