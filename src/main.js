@@ -7,7 +7,7 @@ window.onload = () => {
   const u = new Utils();
 
   // states
-  const circles_limit = 200;
+  const circles_limit = 300;
   const circles = [];
   const screen = {
     w: window.innerWidth,
@@ -24,6 +24,12 @@ window.onload = () => {
   window.onresize = () => {
     (canvas.width = window.innerWidth), (canvas.height = window.innerHeight);
   };
+
+  window.ontouchmove = (e) => {
+    mouse.x = e.touches[0].clientX;
+    mouse.y = e.touches[0].clientY;
+  };
+
   window.onmousemove = (e) => {
     mouse.x = e.clientX;
     mouse.y = e.clientY;
@@ -35,8 +41,8 @@ window.onload = () => {
       this.y = y;
       this.dx = u.chose([1, -1]);
       this.dy = u.chose([1, -1]);
-      this.speedX = u.random(1.2, 2.5, true);
-      this.speedY = u.random(1.2, 2.5, true);
+      this.speedX = u.random(1.2, 3.5, true);
+      this.speedY = u.random(1.2, 3.5, true);
       this.radius = radius;
       this.store_radius = radius;
       this.color = color;
